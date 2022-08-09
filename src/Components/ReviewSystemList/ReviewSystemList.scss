@@ -1,0 +1,75 @@
+@import "../../css/variables";
+.review-wdiget-top {
+  flex: 1;
+  h2 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .progress-review-widget {
+    display: flex;
+    p {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      i {
+        margin-left: 5px;
+        font-size: 10px;
+      }
+    }
+  }
+  .rating-show {
+    display: flex;
+    align-items: center;
+    h3 {
+      margin: 0px;
+      padding-left: 30px;
+    }
+  }
+}
+.review-list-main {
+  margin-top: 30px;
+  .review-list-top {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 20px;
+    .review-total-info {
+      float: left;
+      p {
+        margin: 0px;
+        padding-top: 10px;
+      }
+    }
+    .review-sorting {
+      float: right;
+    }
+  }
+  .user-stars {
+    display: flex;
+    ul {
+      margin: 0px;
+      padding: 0px;
+      li {
+        display: inline-block;
+        i {
+          color: $theme-secondary-color;
+        }
+      }
+    }
+    p {
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .user-rating-detail {
+    h2 {
+      font-size: 20px;
+    }
+  }
+  .review-widget-listing {
+    padding-top: 10px;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 10px;
+  }
+}

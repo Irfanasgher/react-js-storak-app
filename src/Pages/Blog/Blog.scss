@@ -1,0 +1,274 @@
+@import "../../css/variables";
+.blog-page-inner {
+  .top-news {
+    padding: 30px 0px;
+    .top-news-widget {
+      height: 500px;
+      position: relative;
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 500px;
+      }
+      .top-news-content {
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 30px;
+        width: 100%;
+        max-width: 850px;
+        margin: 0 auto;
+        h2 {
+          font-size: 18px;
+        }
+        a {
+          font-size: 30px;
+          font-weight: 400;
+          color: $light-theme-color;
+          text-decoration: none;
+        }
+        p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+    .slick-dots {
+      bottom: 20px;
+      li button {
+        background: #ccc;
+        opacity: 1;
+        height: 4px;
+        width: 24px;
+        padding: 0px;
+        &:before {
+          display: none;
+        }
+      }
+      li.slick-active button {
+        background: $light-theme-color;
+      }
+    }
+  }
+  .news-widget {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 20px;
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 30px;
+      font-weight: 400;
+      color: $theme-secondary-color;
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    span {
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    a {
+      display: inline-block;
+      background: $light-theme-color;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      transition: all ease-in-out 0.4s;
+      &:hover {
+        background: $dark-theme-color;
+      }
+    }
+  }
+  .news-heading {
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      font-weight: 400;
+    }
+    p {
+      color: #ada6a6;
+    }
+    .social-nav {
+      text-align: right;
+      .social-nav ul li a i {
+        transition: initial;
+      }
+    }
+  }
+  .latest-post {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    .latest-post-widget {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #efefef;
+      margin-bottom: 20px;
+      .latest-post-image img {
+        width: 100%;
+      }
+      .latest-post-desc {
+        a {
+          display: inline-block;
+          width: 100%;
+          font-size: 18px;
+          margin: 0;
+          color: $light-theme-color;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          text-decoration: none;
+          transition: all ease-in-out 0.4s;
+          &:hover {
+            color: $theme-secondary-color;
+          }
+        }
+        span {
+          font-size: 12px;
+          color: #ada6a6;
+        }
+      }
+    }
+  }
+  .blog-content-layout {
+    padding-bottom: 30px;
+    .blog-layout-selection {
+      padding-bottom: 30px;
+      .list {
+        text-align: right;
+        span.anticon {
+          margin: 0px 3px;
+          padding: 4px;
+          border: 1px solid #ccc;
+        }
+        .anticon.active {
+          background: #13548d;
+          color: #fff;
+          border-color: #13548d;
+        }
+      }
+    }
+  }
+  .layout-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    .blog-grid-layout {
+      width: 49%;
+      .blog-image {
+        img {
+          width: 100%;
+        }
+      }
+      .blog-content {
+        padding: 20px 0px;
+        h2 {
+          font-size: 16px;
+        }
+        h3 {
+          font-size: 24px;
+          font-weight: 400;
+          color: #fd8f1f;
+          text-decoration: none;
+          margin-bottom: 10px;
+        }
+        span {
+          margin-bottom: 10px;
+          display: inline-block;
+          color: #ccc;
+          font-size: 14px;
+        }
+        p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+        a {
+          display: inline-block;
+          background: #13548d;
+          color: #fff;
+          padding: 10px 20px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          text-decoration: none;
+          transition: all ease-in-out 0.4s;
+          &:hover {
+            background: $dark-theme-color;
+          }
+        }
+      }
+    }
+  }
+  .layout-list {
+    .blog-grid-layout {
+      display: flex;
+      flex-basis: 100%;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #efefef;
+      .blog-image {
+        width: 40%;
+        img {
+          width: 100%;
+        }
+      }
+      .blog-content {
+        width: 60%;
+        padding: 20px;
+        h2 {
+          font-size: 20px;
+          font-weight: 400;
+        }
+        h3 {
+          font-size: 20px;
+          color: $light-theme-color;
+        }
+        p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+        a {
+          display: inline-block;
+          background: #13548d;
+          color: #fff;
+          padding: 5px 15px;
+          text-decoration: none;
+          transition: all ease-in-out 0.4s;
+          &:hover {
+            background: $dark-theme-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import "../../../css/variables";
+.order-show {
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 27px -10px #ccc;
+  label {
+    margin-right: 10px;
+  }
+}
+.order-card {
+  box-shadow: 0px 0px 27px -10px #ccc;
+  margin-bottom: 20px;
+  .order-card-heading {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    h2 {
+      font-size: 20px;
+      margin: 0px;
+      span {
+        color: $theme-secondary-color;
+      }
+    }
+    p {
+      margin: 0px;
+      color: #888;
+    }
+  }
+}
+.order-card-detail {
+  padding-top: 20px;
+  .order-card-detail-list {
+    padding-bottom: 20px;
+    display: flex;
+    .order-image img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+    .order-title {
+      flex: 1;
+      h2 {
+        font-size: 16px;
+        padding: 0px 20px;
+      }
+    }
+    .order-quality {
+      h2 {
+        font-size: 16px;
+        padding: 0px 20px;
+        color: #ccc;
+        span {
+          color: #000;
+          font-weight: 700;
+        }
+      }
+    }
+    .order-status {
+      p {
+        margin: 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        width: 80px;
+        text-align: center;
+        text-transform: capitalize;
+      }
+      .delivered {
+        background: green;
+        color: #fff;
+      }
+      .shipped {
+        background: rgb(79, 60, 248);
+        color: #fff;
+      }
+      .pending {
+        background: orange;
+        color: #fff;
+      }
+    }
+    .order-date {
+      p {
+        margin: 0;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+.received-order {
+  .add-review {
+    text-align: right;
+    margin-top: 20px;
+  }
+}

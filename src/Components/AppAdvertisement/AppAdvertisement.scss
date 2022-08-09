@@ -1,0 +1,46 @@
+@import "../../css/variables";
+.app-advertisement-section {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c8980+0,388090+50,497aa3+100 */
+  background: rgb(44, 137, 128); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(44, 137, 128, 1) 0%,
+    rgba(56, 128, 144, 1) 50%,
+    rgba(73, 122, 163, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(44, 137, 128, 1) 0%,
+    rgba(56, 128, 144, 1) 50%,
+    rgba(73, 122, 163, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(44, 137, 128, 1) 0%,
+    rgba(56, 128, 144, 1) 50%,
+    rgba(73, 122, 163, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c8980', endColorstr='#497aa3',GradientType=0 ); /* IE6-9 */
+
+  .inner-container {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 95%;
+    .mobile-adv-content {
+      text-align: center;
+      padding: 50px 0px;
+      margin-right: 90px;
+      h2 {
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      .app-link img {
+        width: 100%;
+      }
+    }
+    .app-image img {
+      width: 100%;
+      transform: scale(1.2);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.fulfillment {
+  .checkbox-list {
+    margin-bottom: 10px;
+    .free {
+      background: #fd8f1f;
+      padding: 0px 15px;
+      color: #fff;
+      border-radius: 20px;
+      width: 80px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .economy {
+      background: #13548d;
+      padding: 0px 15px;
+      color: #fff;
+      border-radius: 20px;
+      width: 80px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .standard {
+      background: #23b198;
+      padding: 0px 15px;
+      color: #fff;
+      border-radius: 20px;
+      width: 80px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .express {
+      background: #ca2c20;
+      padding: 0px 15px;
+      color: #fff;
+      border-radius: 20px;
+      width: 80px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+  }
+}

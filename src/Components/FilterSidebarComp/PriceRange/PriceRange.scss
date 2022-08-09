@@ -1,0 +1,24 @@
+@import "../../../css/variables";
+.range-input {
+  .ant-input-number {
+    width: 100% !important;
+  }
+}
+.range-icon {
+  span.anticon {
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: sub;
+    width: 100%;
+  }
+}
+.range-button {
+  span {
+    font-weight: 700;
+    color: $light-theme-color;
+  }
+  button {
+    padding: 0;
+  }
+}

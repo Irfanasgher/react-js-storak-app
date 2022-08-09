@@ -1,0 +1,93 @@
+@import "../../css/variables";
+.vendor-store-page {
+  .store-banner {
+    img {
+      width: 100%;
+    }
+  }
+  .latest-product-store {
+    padding: 30px 0px;
+    .store-section {
+      .store-heading {
+        h2 {
+          font-size: 20px;
+          color: $light-theme-color;
+          margin-bottom: 30px;
+        }
+      }
+      .store-widget {
+        margin-bottom: 20px;
+        .store-widget-image img {
+          width: 100%;
+          border-radius: 10px;
+        }
+        .store-widget-detail {
+          h2 {
+            font-size: 16px;
+            color: $light-theme-color;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          h3 {
+            font-size: 16px;
+            color: $theme-secondary-color;
+            margin: 0px;
+          }
+          ul {
+            margin: 0px;
+            li {
+              display: inline-block;
+              font-size: 12px;
+              margin-right: 3px;
+              color: #a5a50d;
+            }
+          }
+          a {
+            font-size: 20px;
+            display: inline-block;
+            color: $light-theme-color;
+          }
+        }
+      }
+    }
+  }
+  .top-featured-store {
+    padding: 50px 0px;
+    margin-top: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .store-heading {
+      h2 {
+        font-size: 20px;
+        color: $light-theme-color;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .featured-product-inner {
+    position: relative;
+    .load-more-featured {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      a {
+        background: transparent;
+        text-decoration: none;
+        border: 2px solid $light-theme-color;
+        padding: 10px 20px;
+        color: $light-theme-color;
+        transition: all ease-in-out 0.4s;
+        &:hover {
+          background: $light-theme-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.top-rated-store {
+  padding: 50px 0px;
+}

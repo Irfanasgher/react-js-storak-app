@@ -1,0 +1,11 @@
+.product-rating {
+  display: flex;
+  align-items: center;
+  .rating {
+    flex: 1;
+  }
+  .rating-number {
+    font-weight: 600;
+    color: #757575;
+  }
+}

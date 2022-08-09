@@ -1,0 +1,36 @@
+@import "../../../css/variables";
+.address-main-part {
+  .new-address {
+    margin-bottom: 20px;
+  }
+  .address-widget {
+    margin-bottom: 20px;
+    h2.heading {
+      background: $theme-secondary-color;
+      margin: 0px;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 20px;
+    }
+    .inner-address-widget {
+      background: #f0f2f5;
+      padding: 20px;
+      border-left: 3px solid $light-theme-color;
+      h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .address-content-widget {
+        span {
+          margin-bottom: 5px;
+          display: inline-block;
+          width: 100%;
+          font-weight: 600;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

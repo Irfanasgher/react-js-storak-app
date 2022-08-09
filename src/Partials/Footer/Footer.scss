@@ -1,0 +1,224 @@
+@import "../../css/variables";
+/*********************** Footer ***************************/
+
+footer {
+  text-align: left;
+}
+.footer-logo img {
+  width: auto;
+  max-width: none;
+}
+
+.main-footer {
+  background: #6c1d45;
+
+  /* background: linear-gradient( 
+    0deg
+     , rgb(0 0 0 / 100%), rgb(152 155 154 / 70%)), url('/assets/images/footer-bg.png'); */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   height: 25px;
+  //   top: -23px;
+  //   transform: rotate(180deg);
+  //   background-image: linear-gradient(220deg, #6c1d45 17px, transparent 18px),
+  //     linear-gradient(136deg, #6c1d45 17px, transparent 18px);
+  //   background-size: 50px 50px;
+  //   background-repeat: repeat-x;
+  // }
+}
+
+.footer-about p {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.footer-about-widget {
+  display: flex;
+  color: #fff;
+  margin-bottom: 10px;
+  align-items: center;
+
+  .icon {
+    background: $theme-secondary-color;
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 3px;
+    margin-right: 20px;
+    transition: all ease-in-out 0.4s;
+  }
+
+  &:hover .icon {
+    background: #000;
+  }
+
+  .icon svg {
+    transition: all ease-in-out 0.4s;
+  }
+
+  &:hover .icon svg {
+    transform: rotate(360deg);
+  }
+
+  span {
+    font-size: 12px;
+    flex: 1;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+  }
+}
+
+.footer-widget {
+  .footer-logo {
+    position: relative;
+    &:after {
+      content: "Click | Shop | Repeat";
+      position: absolute;
+      bottom: -4px;
+      left: 12px;
+      font-size: 8px;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+    }
+  }
+  h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.6;
+        transition: all ease-in-out 0.4s;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.footer-newsletter {
+  p {
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .subscribe-field {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 14px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .subscribe-btn {
+    display: inline-block;
+    width: 100%;
+    background: $theme-secondary-color;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: all ease-in-out 0.4s;
+    font-size: 14px;
+    font-weight: 700;
+
+    &:hover {
+      background: #000;
+    }
+  }
+}
+
+.copyright {
+  background: #fff;
+  color: #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.apps-icons ul {
+  margin: 0;
+  padding: 0px;
+
+  li {
+    display: inline-block;
+    margin-left: 10px;
+
+    img {
+      width: 100px;
+    }
+  }
+}
+
+.copyright-text p {
+  margin: 0;
+  padding-top: 7px;
+}
+
+.footer-card {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  flex: 1;
+}
+
+.footer-icons-main {
+  display: flex;
+}
+
+.footer-card ul li img {
+  width: 35px;
+  transition: all ease-in-out 0.4s;
+  filter: grayscale(1);
+
+  &:hover {
+    filter: hue-rotate(145deg);
+  }
+}
+
+/*********************** Footer ***************************/

@@ -1,0 +1,177 @@
+@import "../../css/variables";
+.search-page {
+  background: #efefef;
+  padding: 30px 0px;
+  
+  .layout-list {
+    padding-top: 20px;
+    .product-widget-layout {
+      display: flex;
+      margin-bottom: 20px;
+      position: relative;
+      .product-image {
+        position: relative;
+        img {
+          width: 100%;
+          height: 170px;
+          object-fit: cover;
+        }
+        .sale {
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: green;
+          color: #fff;
+          font-size: 12px;
+          padding: 4px 5px;
+        }
+        .wishlist {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 6px 8px;
+          background: rgba(0, 0, 0, 0.2);
+          display: flex;
+          color: #fff;
+        }
+      }
+      .product-detail {
+        background: #fff;
+        padding: 10px 20px;
+        flex-basis: 100%;
+        .product-detail-top {
+          display: flex;
+          .product-title {
+            flex: 1;
+            h2 {
+              font-size: 20px;
+            }
+          }
+          .price {
+            h2 {
+              font-size: 24px;
+              color: $theme-secondary-color;
+            }
+          }
+        }
+        .arrive span {
+          font-weight: bold;
+        }
+        .detail-more {
+          position: absolute;
+          bottom: 0;
+          right: 10px;
+          a {
+            display: inline-block;
+            width: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            background: $light-theme-color;
+            padding: 7px 15px;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 4px;
+            text-decoration: none;
+            &:hover {
+              background: $theme-secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .layout-grid {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .product-widget-layout {
+      width: 180px;
+      margin-bottom: 20px;
+      flex: auto;
+      position: relative;
+      .product-image {
+        position: relative;
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+        .sale {
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: green;
+          color: #fff;
+          font-size: 12px;
+          padding: 4px 5px;
+        }
+        .wishlist {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          padding: 6px 8px;
+          background: rgba(0, 0, 0, 0.2);
+          display: flex;
+          color: #fff;
+        }
+      }
+      .product-detail {
+        background: #fff;
+        padding: 10px;
+        .product-title {
+          h2 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 10px;
+          }
+        }
+        .price h2 {
+          font-size: 20px;
+          color: $theme-secondary-color;
+        }
+        .arrive {
+          span {
+            font-weight: bold;
+          }
+          p {
+            font-size: 12px;
+            margin-bottom: 5px;
+          }
+        }
+        .detail-more a {
+          display: block;
+          opacity: 0;
+          position: absolute;
+          text-align: center;
+          background: #13548d;
+          padding: 7px 15px;
+          color: #fff;
+          text-transform: uppercase;
+          border-radius: 4px;
+          text-decoration: none;
+          top: 30px;
+          left: 0;
+          right: 0;
+          width: 100%;
+          margin: 0 auto;
+          max-width: 120px;
+          &:hover {
+            background: $theme-secondary-color;
+          }
+        }
+      }
+      &:hover .detail-more a {
+        opacity: 1;
+      }
+    }
+  }
+}

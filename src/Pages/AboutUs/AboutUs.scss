@@ -1,0 +1,253 @@
+@import "../../css/variables";
+.about-page {
+  .about-section {
+    padding: 50px 0px;
+    background: rgba(19, 84, 141, 0.2);
+    .heading {
+      text-align: center;
+      margin-bottom: 30px;
+      h2 {
+        color: $theme-secondary-color;
+        font-size: 40px;
+      }
+    }
+    .about-top-image {
+      position: relative;
+      z-index: 1;
+      img {
+        width: 100%;
+        border: 13px solid #fff;
+        border-radius: 200px;
+        height: auto;
+        object-fit: cover;
+        box-shadow: 0px 0px 10px 0px #ccc;
+      }
+    }
+    .about-top-text-left {
+      h2 {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          left: 0;
+          background: $theme-secondary-color;
+          height: 4px;
+          bottom: 0;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100px;
+          right: -70px;
+          background: #fd8f1f;
+          height: 4px;
+          bottom: -44px;
+          transform: rotate(65deg);
+        }
+      }
+    }
+    .about-top-text-right {
+      h2 {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          left: 0;
+          background: $theme-secondary-color;
+          height: 4px;
+          bottom: 0;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100px;
+          left: -75px;
+          background: #fd8f1f;
+          height: 4px;
+          bottom: -42px;
+          transform: rotate(120deg);
+        }
+      }
+    }
+    .about-top-text-bottom-right {
+      margin-top: -70px;
+      h2 {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          left: 0;
+          background: $theme-secondary-color;
+          height: 4px;
+          bottom: 0;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100px;
+          left: -76px;
+          background: #fd8f1f;
+          height: 4px;
+          top: 2px;
+          transform: rotate(58deg);
+        }
+      }
+    }
+    .about-top-text-bottom-left {
+      margin-top: -70px;
+      h2 {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          left: 0;
+          background: $theme-secondary-color;
+          height: 4px;
+          bottom: 0;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100px;
+          right: -75px;
+          background: #fd8f1f;
+          height: 4px;
+          top: 2px;
+          transform: rotate(120deg);
+        }
+      }
+    }
+  }
+  .about-section-one {
+    padding: 50px 0px;
+    background: rgba(253, 143, 31, 0.2);
+    .about-section-image {
+      img {
+        width: 100%;
+        border-radius: 40px;
+      }
+    }
+    .about-section-desc {
+      display: flex;
+      margin-top: 40px;
+      padding-left: 50px;
+      .about-box {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        &.blue-theme {
+          background: $light-theme-color;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          background: #000;
+          width: 20px;
+          height: 20px;
+          right: -7px;
+          top: -7px;
+          z-index: -1;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          background-image: url("/images/strokes-lines.png");
+          width: 30px;
+          height: 30px;
+          left: -12px;
+          bottom: -12px;
+          z-index: -1;
+          background-size: 100%;
+        }
+      }
+
+      .about-detail {
+        padding-left: 30px;
+        width: 80%;
+        display: inline-block;
+        vertical-align: top;
+        h2 {
+          font-size: 40px;
+          font-weight: 600;
+          &.blue-theme {
+            color: $light-theme-color;
+          }
+        }
+      }
+    }
+  }
+  .about-section-two {
+    padding: 50px 0px;
+    background: rgba(19, 84, 141, 0.2);
+    .about-section-image {
+      img {
+        width: 100%;
+      }
+    }
+    .about-section-desc {
+      display: flex;
+      margin-top: 40px;
+      padding-left: 0px;
+      .about-box {
+        width: 70px;
+        height: 70px;
+        position: relative;
+
+        &.orange-theme {
+          background: $theme-secondary-color;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          background: #000;
+          width: 20px;
+          height: 20px;
+          right: -7px;
+          top: -7px;
+          z-index: -1;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          background-image: url("/images/strokes-lines.png");
+          width: 30px;
+          height: 30px;
+          left: -12px;
+          bottom: -12px;
+          z-index: -1;
+          background-size: 100%;
+        }
+      }
+
+      .about-detail {
+        padding-left: 30px;
+        width: 80%;
+        display: inline-block;
+        vertical-align: top;
+        h2 {
+          font-size: 40px;
+          font-weight: 600;
+          &.orange-theme {
+            color: $theme-secondary-color;
+          }
+        }
+      }
+    }
+  }
+}

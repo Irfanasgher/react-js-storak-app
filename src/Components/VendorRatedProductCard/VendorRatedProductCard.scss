@@ -1,0 +1,119 @@
+@import "../../css/variables";
+
+.store-heading {
+  h2 {
+    font-size: 20px;
+    color: #13548d;
+    margin-bottom: 30px;
+  }
+}
+.top-rated-store-widget {
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 0px 20px -10px #cccc;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  h2 {
+    font-size: 20px;
+    color: $light-theme-color;
+    padding: 10px;
+  }
+  .new {
+    color: $theme-secondary-color;
+    flex: 1;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .old {
+    text-decoration: line-through;
+    color: #ccc;
+    font-size: 14px;
+  }
+  a.cart-hover {
+    background: $light-theme-color;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 40px;
+    border-radius: 5px;
+    display: flex;
+    padding: 5px 10px;
+    margin: 0 auto;
+    top: 0;
+    color: #fff;
+    opacity: 0;
+    transition: all ease-in-out 0.4s;
+  }
+  &:hover a.cart-hover {
+    opacity: 1;
+    top: 40px;
+  }
+  a.top-sale-link {
+    width: 80%;
+    border: 1px solid;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all ease-in-out 0.4s;
+    text-decoration: none;
+    color: $theme-secondary-color;
+    .anticon-shopping-cart {
+      padding-right: 10px;
+    }
+  }
+  &:hover a.top-sale-link {
+    background: $theme-secondary-color;
+    color: #fff;
+  }
+  span.sale {
+    position: absolute;
+    background: $theme-secondary-color;
+    border-radius: 80px;
+    text-transform: uppercase;
+    color: #fff;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $theme-secondary-color;
+    transition: all ease-in-out 0.4s;
+  }
+  &:hover span.sale {
+    background: #fff;
+    color: $theme-secondary-color;
+  }
+}
+
+.top-rated-sale-store {
+  padding: 50px 0px;
+  background: #efefef;
+  .store-heading {
+    h2 {
+      font-size: 20px;
+      color: #13548d;
+      margin-bottom: 30px;
+    }
+  }
+}
+.backgound-gray {
+  background: #efefef;
+}

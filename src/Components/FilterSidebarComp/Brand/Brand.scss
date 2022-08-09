@@ -1,0 +1,22 @@
+.brand-section {
+  .filter-brand {
+    .ant-select {
+      width: 100%;
+    }
+  }
+  .brand-list {
+    position: relative;
+    margin-top: 10px;
+    .brand-count {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  a {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+}

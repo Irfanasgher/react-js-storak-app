@@ -1,0 +1,15 @@
+.color-list {
+  ul {
+    display: flex;
+    margin: 0px;
+    flex-wrap: wrap;
+    li {
+      list-style: none;
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+      border-radius: 3px;
+      margin-bottom: 5px;
+    }
+  }
+}

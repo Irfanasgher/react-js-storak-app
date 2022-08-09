@@ -1,0 +1,62 @@
+@import "../../css/variables";
+.clients-section {
+  padding: 50px 0px 80px 0px;
+  background: #fff;
+  border-top: 1px solid #efefef;
+  .slick-slide {
+    padding: 2px 8px;
+    box-sizing: border-box;
+  }
+}
+
+.client-heading {
+  text-align: center;
+  margin-bottom: 30px;
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $theme-secondary-color;
+      width: 100px;
+      height: 3px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.client-widget {
+  border: 1px solid #ccc;
+  padding: 20px;
+  position: relative;
+  transition: all ease-in-out 0.4s;
+
+  img {
+    width: auto !important;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #fff;
+  }
+}
+
+.owl-carousel.client-logo .owl-item img {
+  display: block;
+  width: auto;
+}
+
+.client-widget:hover {
+  border-color: $theme-secondary-color;
+}

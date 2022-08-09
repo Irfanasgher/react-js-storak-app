@@ -1,0 +1,166 @@
+@import "../../css/variables";
+$slick-font-family: FontAwesome;
+$slick-prev-character: "\f053";
+$slick-next-character: "\f054";
+.home-banner {
+  position: relative;
+
+  .owl-prev {
+    position: absolute;
+    left: 0;
+    top: 40%;
+  }
+
+  .owl-next {
+    position: absolute;
+    right: 0;
+    top: 40%;
+  }
+
+  .owl-prev span,
+  .owl-next span {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 30px;
+    display: inline-block;
+    border-radius: 20px;
+    color: #000;
+    transition: all ease-in-out 0.4s;
+  }
+
+  .owl-prev:hover,
+  .owl-next:hover {
+    background: transparent !important;
+  }
+
+  .owl-prev span:hover,
+  .owl-next span:hover {
+    background: $light-theme-color;
+    color: $white-color;
+  }
+
+  .owl-theme {
+    .owl-dots .owl-dot {
+      span {
+        width: 25px;
+        height: 4px;
+        margin: 5px;
+        background: #d6d6d6;
+        border-radius: 0;
+      }
+
+      &.active span,
+      span:hover {
+        background: $theme-secondary-color;
+      }
+    }
+
+    .owl-nav {
+      margin-top: 0;
+    }
+  }
+  .slick-dots li button {
+    background: #ccc;
+    opacity: 1;
+    height: 4px;
+    width: 24px;
+    padding: 0px;
+  }
+  .slick-dots li button:before {
+    display: none;
+  }
+  .slick-dots li.slick-active button {
+    background: $theme-secondary-color;
+  }
+  .top-banner img {
+    width: 100%;
+  }
+  .slick-prev {
+    left: 0;
+    top: 45%;
+    right: auto;
+    z-index: 1;
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f053";
+      background: #fff;
+      padding: 15px 7px 15px 7px;
+      border-radius: 0px;
+      color: #000;
+    }
+  }
+  .slick-next {
+    right: 5px;
+    top: 45%;
+    left: auto;
+    z-index: 1;
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f054";
+      background: #fff;
+      padding: 15px 7px 15px 7px;
+      border-radius: 0px;
+      color: #000;
+    }
+  }
+}
+.banner-image {
+  img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+  }
+}
+.home-banner-main {
+  position: relative;
+  background: #dadada;
+  padding: 50px 0px;
+  margin-bottom: 30px;
+  height: 450px;
+}
+.banner-content {
+  h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: $theme-secondary-color;
+  }
+  h3 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $light-theme-color;
+  }
+  ul {
+    margin-top: 20px;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      padding-right: 20px;
+    }
+  }
+}
+// .home-banner-main:after {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   height: 25px;
+//   bottom: -23px;
+//   background-image: linear-gradient(220deg, #dadada 17px, transparent 18px),
+//     linear-gradient(136deg, #dadada 17px, transparent 18px);
+//   background-size: 50px 50px;
+//   background-repeat: repeat-x;
+// }
+.banner-home img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.top-banner {
+  margin: 5px 0px;
+}
